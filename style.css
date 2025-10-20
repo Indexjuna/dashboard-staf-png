@@ -1,84 +1,127 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
-
+/* Reset all margins and paddings */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Arial', sans-serif;
 }
 
-body.neon-bg {
-  background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
-  color: #fff;
-  min-height: 100vh;
+/* Basic body and background */
+body {
+  background: linear-gradient(135deg, #5b6ee1, #4d88ff);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Login page styling */
+.login-container {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #141414;
 }
 
-.auth-container {
-  background: rgba(20, 20, 35, 0.8);
-  padding: 40px;
-  border-radius: 20px;
-  box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
-  width: 350px;
+.login-card {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  color: #fff;
   text-align: center;
 }
 
-.neon-title {
-  color: #00ffff;
-  font-weight: 800;
-  text-shadow: 0 0 20px #00ffff;
+h1 {
+  font-size: 24px;
   margin-bottom: 20px;
 }
 
-.auth-form {
-  display: none;
-  flex-direction: column;
-  gap: 15px;
+.form-group {
+  margin-bottom: 20px;
 }
 
-.auth-form.active {
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  width: 100%;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.btn-login {
+  background-color: #4d88ff;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 20px;
+}
+
+/* Dashboard styling */
+.dashboard-container {
   display: flex;
 }
 
-.auth-form input {
-  padding: 10px;
-  border: 2px solid #00ffff;
-  background: transparent;
-  border-radius: 10px;
-  color: white;
-  outline: none;
-  transition: 0.3s;
+.sidebar {
+  width: 250px;
+  background: #111;
+  padding: 20px;
+  height: 100vh;
 }
 
-.auth-form input:focus {
-  box-shadow: 0 0 10px #00ffff;
+.menu {
+  list-style-type: none;
 }
 
-.neon-btn {
-  background: linear-gradient(90deg, #00ffff, #007bff);
-  border: none;
-  padding: 10px;
-  border-radius: 10px;
-  font-weight: bold;
+.menu-item {
+  color: #fff;
+  padding: 12px;
+  margin-bottom: 10px;
   cursor: pointer;
-  color: #000;
-  text-transform: uppercase;
-  box-shadow: 0 0 15px #00ffff;
-  transition: 0.3s;
+  transition: background-color 0.3s;
 }
 
-.neon-btn:hover {
-  box-shadow: 0 0 25px #00ffff;
+.menu-item:hover {
+  background-color: #333;
 }
 
-.switch {
-  color: #aaa;
-  font-size: 0.9em;
+.menu-item.active {
+  background-color: #4d88ff;
 }
 
-.switch a {
-  color: #00ffff;
-  cursor: pointer;
+.main-content {
+  padding: 20px;
+  flex: 1;
+}
+
+#staffTable {
+  background: #222;
+  padding: 20px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+#staffTable table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#staffTable th, #staffTable td {
+  padding: 10px;
+  text-align: center;
+}
+
+#staffTable th {
+  background-color: #333;
+}
+
+#staffTable tr:nth-child(even) {
+  background-color: #444;
 }
