@@ -3,36 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Neon Staff Dashboard</title>
+  <title>Dashboard Staf</title>
   <link rel="stylesheet" href="style.css">
-</head>
-<body class="neon-dashboard">
-  <div class="sidebar">
-    <h2 class="neon-title">STAFF</h2>
-    <ul>
-      <li class="active" data-content="home">🏠 Home</li>
-      <li data-content="staff">👥 Data Staff</li>
-      <li data-content="logout" id="logoutBtn">🚪 Logout</li>
-    </ul>
-  </div>
-
-  <div class="main">
-    <div id="home" class="page active">
-      <h1>Selamat Datang</h1>
-      <p>Dashboard Neon untuk data staff.</p>
-    </div>
-
-    <div id="staff" class="page">
-      <h1>Data Staff</h1>
-      <table id="staffTable">
-        <thead>
-          <tr><th>Nama</th><th>Inisial</th><th>Tanggal Join</th><th>Email</th></tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-  </div>
-
   <script type="module" src="script.js"></script>
+</head>
+<body>
+  <div class="dashboard-container">
+    <div class="sidebar">
+      <div class="logo">Dashboard</div>
+      <ul class="menu">
+        <li class="menu-item" data-content="home">Home</li>
+        <li class="menu-item" data-content="staff">Data Staf</li>
+        <li class="menu-item" data-content="logout" id="logoutBtn">Logout</li>
+      </ul>
+    </div>
+    <div class="main-content">
+      <h1 id="pageTitle">Dashboard Staf</h1>
+      <div class="content-area">
+        <div id="home-content" class="content-section active">Welcome to the dashboard!</div>
+        <div id="staff-content" class="content-section">
+          <h2>Data Staf</h2>
+          <div id="staffTable"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
