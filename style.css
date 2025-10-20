@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body.neon-bg {
+  background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-container {
+  background: rgba(20, 20, 35, 0.8);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+  width: 350px;
+  text-align: center;
+}
+
+.neon-title {
+  color: #00ffff;
+  font-weight: 800;
+  text-shadow: 0 0 20px #00ffff;
+  margin-bottom: 20px;
+}
+
+.auth-form {
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.auth-form.active {
+  display: flex;
+}
+
+.auth-form input {
+  padding: 10px;
+  border: 2px solid #00ffff;
+  background: transparent;
+  border-radius: 10px;
+  color: white;
+  outline: none;
+  transition: 0.3s;
+}
+
+.auth-form input:focus {
+  box-shadow: 0 0 10px #00ffff;
+}
+
+.neon-btn {
+  background: linear-gradient(90deg, #00ffff, #007bff);
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #000;
+  text-transform: uppercase;
+  box-shadow: 0 0 15px #00ffff;
+  transition: 0.3s;
+}
+
+.neon-btn:hover {
+  box-shadow: 0 0 25px #00ffff;
+}
+
+.switch {
+  color: #aaa;
+  font-size: 0.9em;
+}
+
+.switch a {
+  color: #00ffff;
+  cursor: pointer;
+}
